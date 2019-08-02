@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/rottencandy
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://saud.gq
+  * I am rottencandy (https://keybase.io/rottencandy) on keybase.
+  * I have a public key with fingerprint DC44 DC62 5B14 2182 A8D5  E94D F355 231B 5588 3E9D
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01206ee2d19247bc1bd3499a698c2091f1568076af8b3b11407b354d19321c3857b90a",
+      "fingerprint": "dc44dc625b142182a8d5e94df355231b55883e9d",
+      "host": "keybase.io",
+      "key_id": "f355231b55883e9d",
+      "kid": "0101f284a5263a0ba6846d62c1b319a5c6564f80c0f5eb2d8178239d939324380b060a",
+      "uid": "c49df8e5d3a0c6e589a33c0e2bf10c19",
+      "username": "rottencandy"
+    },
+    "service": {
+      "hostname": "saud.gq",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1560798678,
+  "expire_in": 157680000,
+  "prev": "8ecab89090910bc9515626daa3f95fbcf7e8d11fa31a9e26952d1549643b5bb8",
+  "seqno": 9,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.0
+Comment: https://keybase.io/crypto
+
+yMNwAnicbZJ7UBVVHMcvKKHXEDNjLHq5F2pkSPbs65698lICxvSq42PAAm579pyF
+Dbj3cl+8pMlHPiYHKxCswYyhqESbCm1goohHWhJKUIJIKiUDBDpD5AwzFXQuo/+1
+54+dPefz/e739/udzpAFBmPA9E5T+M5D8ScCutqOeQ2ZwSNXShnkwMWMpZTJJfMv
+koeJ22PL1TFjYVjAsRIhHAYyJ5iRChDmBVlWJBmqHCsDDYgSZM2SokHEIwAE1ox4
+UaA4zwGVh6IZyazCRDOabs8mLqdLt3uoLVYFAasSJyIgcAByCsQikQWs8aLI8QCJ
+IoQ8kTEV5jjcfgUNhxQ3WaM76B79sM3H+x/+fm4WaBwUFJGTeIVFigQFCUscLYAH
+siKqkigJGmRVVhMJ4jAEZsjxMpZ5GlzgIYtYaT63d95OFWSsQSJi6qVKRISywvMq
+SzikAVYFsh90E5ddySeUdjk8HmJXFTvta1k0Qw98ukr8vfUXcw9yK168JruAKp2U
+d6iOPLqZ4/E43Ra/yFPs9FOFBNnu6W1It2PaRarwEZdbd9gZC6Ck6tH9hnQQrFmG
+khlGM6TIqbuITfcTopkOiD7+/xAftYREVRCUWboAi1RZpEpOworCa7KoIVUzE4gB
+0BQeKDLhJFmk0xcFWRJ4JCIEGX9FBXYHY5FpTCXbX4uebVc8XhdhytrbMhYaAoyG
+B4IC/bfLYFy87P6de2VF6CzIBulj3686OfaTkjHRmwULb5vRrePBTzZ9pg2kXbR+
++tH1TVL22kZo73LPxEfYUhOS5JJI6dvO7h3WB9cPHm/PPz9anTcXZO3dm/hBQ3lb
+Xers23mxQm1f4dODBRV/rhh/48xUwtTE/s7XmgeXHrGl3UivFNCvI8vOJuvjQZ0X
+6uuaSxK3OGO7hq8F1FwN62jYsjj3knLqfN26mCvv1Sb7cs/mpWxM2b29O3rjxbTL
+3YaeZy4XPPeH5WDjwV2OvswfZuNeCh+dWTiwPS63+mbOscjh9TNV+PTyw+UdiZnq
+Gev7Kz/cleSdq2pd1NLz24IWQ+kLN6Me+XtrzReTTZ5rf1UefWcy6lFw9JfWuyaj
+MS6lJXS8fHy57/Xp8MlVKf1Tob6h/qE7qwczljpenCzZkfgPX5Vc2lERiYtevm1q
+2x1WmGJ9dlEsn55VMfdvhilg8+ChOyFp0xURM2Nr93zVs2Tf40Mbtn1ZEva1dXWx
+N8SxyVdIyupPJg31RDVcypiNcZ8qR8PA7n0+0FQ2q0U07cPfNVRxqeOb7xYsKZKU
+695bWBNGw36u7YxpTLfuSfjdGJxjCp3Imgl79c1v1p3+HLYP9UcN4wOt4Q83HDY9
+tMFYyz7xVn1se805y1M5wc3b+kbaUuMGTNUreytPxL171f3YjR9jm/mtR3r3fuyL
+t3nPBV7Yn54f8cmBpP8ATjG8Og==
+=nkcs
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/rottencandy
+
+==================================================================

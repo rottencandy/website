@@ -1,0 +1,117 @@
+baseurl = "https://saud.gq"
+title   = "Mohammed Saud"
+
+languageCode = "en-us"
+
+theme = "hugo-theme-hello-friend-ng"
+
+PygmentsCodeFences = true
+PygmentsStyle = "monokai"
+
+rssLimit  = 10  # Maximum number of items in the RSS feed.
+
+archetypeDir = "archetypes"
+contentDir   = "content"
+dataDir      = "data"
+layoutDir    = "layouts"
+publishDir   = "public"
+
+enableRobotsTXT = true
+enableGitInfo   = false
+enableEmoji     = true
+enableMissingTranslationPlaceholders = false
+disableRSS     = false
+disableSitemap = false
+disable404     = false
+disableHugoGeneratorInject = false
+
+[permalinks]
+  posts = "/posts/:year/:month/:title/"
+
+[author]
+  name = "Mohammed Saud"
+
+buildDrafts  = false
+buildFuture  = false
+buildExpored = false
+canonifyURLs = true
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
+
+  readOtherPosts = "Read other posts"
+  weight    = 1
+  copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+
+  # Metadata mostly used in document's head
+  description = "portfolio"
+  keywords = "portfolio, homepage, blog, computers, development, programming"
+  images = [""]
+
+  homeSubtitle = ""
+  subtitle = ""
+
+  # Integrate Javascript files or stylesheets by adding the url to the external assets or by
+  # linking local files with their path relative to the static folder, e.g. "css/styles.css"
+  customCSS = []
+  customJS  = []
+
+  # This option needs rebuilding using SCSS, requires extended version of Hugo
+  justifyContent = false  # Set "text-align: justify" to .content.
+
+  # Directory name of your blog content (default is `content/posts`)
+  contentTypeName = "posts"
+  # Default theme "light" or "dark"
+  defaultTheme = "light"
+  themeColor = "#252627"
+
+  [params.logo]
+    logoText     = "$ cd /home/"
+    logoHomeLink = "/"
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
+
+  # Social icons
+  [[params.social]]
+    name = "resume"
+    url  = "/resume.pdf"
+
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/rottencandy"
+
+  [[params.social]]
+    name = "email"
+    url  = "mailto:md.saud020@gmail.com"
+
+  [[params.social]]
+    name = "mastodon"
+    url  = "https://mastodon.xyz/@saud"
+
+  [[params.social]]
+    name = "keybase"
+    url  = "https:keybase.io/rottencandy"
+
+  [[params.social]]
+    name = "twitter"
+    url  = "https://twitter.com/rotttencandy"
+
+  [[params.social]]
+    name = "linkedin"
+    url  = "https://www.linkedin.com/in/rottencandy"
+
+# And you can even create generic menu
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "/about"
+  [[menu.main]]
+    identifier = "blog"
+    name       = "Blog"
+    url        = "/posts"
