@@ -95,7 +95,7 @@ canonifyURLs = true
 
   [[params.social]]
     name = "keybase"
-    url  = "https:keybase.io/rottencandy"
+    url  = "https://keybase.io/rottencandy"
 
   [[params.social]]
     name = "twitter"
