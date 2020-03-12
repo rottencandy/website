@@ -69,7 +69,7 @@ canonifyURLs = true
   themeColor = "#252627"
 
   [params.logo]
-    logoText     = "$ cd /home/"
+    logoText     = "$ cd ~"
     logoHomeLink = "/"
     # or
     #
