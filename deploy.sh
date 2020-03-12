@@ -5,20 +5,17 @@ set -e
 
 printf "\033[0;32mDeploying updates to GitHub...\033[0m\n"
 
-# Build the project.
+# Build the site
 hugo # if using a theme, replace with `hugo -t <YOURTHEME>`
 
-# Copy compiled site
-cp -r public/* ~/code/rottencandy.github.io
-
 # Go To website dir
-cd ~/code/rottencandy.github.io
+cd public
 
 # Add changes to git.
 git add .
 
 # Commit changes.
-msg="rebuilding site $(date)"
+msg="site rebuild: $(date)"
 if [ -n "$*" ]; then
 	msg="$*"
 fi
