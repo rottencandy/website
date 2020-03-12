@@ -23,3 +23,5 @@ git commit -m "$msg"
 
 # Push source and build repos.
 git push origin master
+
+printf "\033[0;32mSuccessfully deployed, changes are now live.\033[0m\n"
