@@ -1,14 +1,9 @@
----
-title: "A new Web Interface for Retroshare"
-date: 2019-05-23
-draft: false
-toc: false
-images:
-tags:
-  - GSOC
-  - Retroshare
-  - Mithril
----
++++
+title = "A new Web Interface for Retroshare"
+description = "A post about the reason behind creating a new web interface for Retroshare."
+date = 2019-05-23
+slug = "a-new-web-interface-for-retroshare"
++++
 
 > This is a mirror of a [post](https://blog.freifunk.net/2019/05/23/a-new-web-interface-for-retroshare) I wrote on the [Freifunk blog](https://blog.freifunk.net).
 
@@ -42,9 +37,9 @@ This app will not have dependencies(such as Nodejs), making it lightweight and a
 
 A minimal working example has been implemented and can be seen in the source page.
 
-Project source: https://github.com/RetroShare/RSNewWebUI
+Project source: [https://github.com/RetroShare/RSNewWebUI](https://github.com/RetroShare/RSNewWebUI)
 
-My fork: https://github.com/rottencandy/RSNewWebUI
+My fork: [https://github.com/rottencandy/RSNewWebUI](https://github.com/rottencandy/RSNewWebUI)
 
 
 ## Overview

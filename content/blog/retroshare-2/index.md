@@ -1,14 +1,9 @@
----
-title: "Web Interface for Retroshare - Update 1"
-date: 2019-06-23
-draft: false
-toc: false
-images:
-tags:
-  - GSOC
-  - Retroshare
-  - Mithril
----
++++
+title = "Web Interface for Retroshare - Update 1"
+description = "Update on the development process of Retroshare's new web interface."
+date = 2019-06-23
+slug = "retroshare-update-2"
++++
 
 > This is a mirror of a [post](https://blog.freifunk.net/2019/06/23/web-interface-for-retroshare-update-1/) I wrote on the [Freifunk blog](https://blog.freifunk.net).
 
@@ -27,9 +22,9 @@ But it does not refresh when component attributes are updated, or when raw promi
 
 Here are a few screenshots displaying the new UI style:
 
-{{< image src="/img/blog/retroshare-update-1/rs-login.png">}}
-{{< image src="/img/blog/retroshare-update-1/rs-home.png">}}
-{{< image src="/img/blog/retroshare-update-1/rs-dloads.png">}}
+![Login page](rs-login.png)
+![Home page](rs-home.png)
+![Downloads page](rs-dloads.png)
 
 
 ## Next Steps

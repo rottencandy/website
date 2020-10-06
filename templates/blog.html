@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}
+<title>Saud | Blog</title>
+{% endblock title %}
+
+{% block content %}
+
+<header>
+  <a href="/">Home</a>
+</header>
+
+<h1>
+  {{ section.title }}
+</h1>
+
+<main>
+  {% for page in section.pages %}
+
+  <h3><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h3>
+  <p>{{ page.description }}</p>
+
+  {% endfor %}
+</main>
+
+{% endblock content %}

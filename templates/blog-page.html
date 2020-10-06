@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}
+<title>Saud | {{ page.title }}</title>
+{% endblock title %}
+
+{% block content %}
+
+<header>
+  <a href="/">Home</a>
+
+  <h1>
+    {{ page.title }}
+  </h1>
+  <strong><time datetime={{ page.date }}>{{ page.date }}</time></strong>
+</header>
+
+<main>
+{{ page.content | safe }}
+</main>
+
+<hr/>
+
+{% endblock content %}
