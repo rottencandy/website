@@ -1,8 +1,16 @@
 {% extends "base.html" %}
 
-{% block title %}
+{% block meta %}
 <title>Saud | {{ page.title }}</title>
-{% endblock title %}
+<meta property="og:title" content="{{ page.title }}" />
+<meta property="og:description" content="{{ page.description }}" />
+{% if page.extra.cover %}
+<meta property="og:image" content="{{ current_url ~ page.extra.cover }}" />
+{% endif %}
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="{{ page.title }}" />
+<meta name="twitter:creator" content="@rotttencandy" />
+{% endblock meta %}
 
 {% block content %}
 
@@ -14,6 +22,8 @@
   </h1>
   <strong><time datetime={{ page.date }}>{{ page.date }}</time></strong>
 </header>
+
+<hr/>
 
 <main>
 {{ page.content | safe }}

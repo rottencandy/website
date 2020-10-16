@@ -3,6 +3,9 @@ title = "Web Interface for Retroshare - Update 2"
 description = "Second progress update. More details about the revamped UI."
 date = 2019-07-24
 slug = "retroshare-update-3"
+
+[extra]
+cover = "rs-login.jpg"
 +++
 
 > This is a mirror of a [post](https://blog.freifunk.net/2019/07/22/web-interface-for-retroshare-update-2/) I wrote on the [Freifunk blog](https://blog.freifunk.net).
