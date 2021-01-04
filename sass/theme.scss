@@ -32,4 +32,8 @@ figcaption {
   font-size: $font-size-base * 0.8;
 }
 
+details > summary {
+  cursor: pointer;
+}
+
 @import "sakura";
