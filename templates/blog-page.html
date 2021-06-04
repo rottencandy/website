@@ -10,6 +10,7 @@
 {% if page.extra.cover %}
 <meta property="og:image" content="{{ current_url ~ page.extra.cover }}" />
 {% endif %}
+<meta name="description" content="{{ page.description }}" />
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:title" content="{{ page.title }}" />
 <meta name="twitter:creator" content="@rotttencandy" />
@@ -20,10 +21,10 @@
 <header>
   <a href="/">Home</a> | <a href="/blog">Posts</a>
 
-  <h1>
+  <h1 class="w500">
     {{ page.title }}
   </h1>
-  <strong><time datetime={{ page.date }}>{{ page.date }}</time></strong>
+  <strong class="w400"><time datetime={{ page.date }}>{{ page.date }}</time></strong>
 </header>
 
 <hr/>
