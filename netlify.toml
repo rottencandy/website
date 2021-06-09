@@ -10,7 +10,7 @@
   # Default build command.
   command = "zola build"
 
-  environment = { ZOLA_VERSION = "0.10.1" }
+  environment = { ZOLA_VERSION = "0.11.0" }
 
 [[headers]]
   for = "/*"
