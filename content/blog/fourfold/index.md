@@ -7,7 +7,7 @@ date = 2020-10-10
 cover = "game.png"
 +++
 
-FOURFOLD was my entry to the [JS13K](https://js13kgames.com) games competition, it [ranked](https://js13kgames.com/#winners) way better than my expectations; 7 overall, 4 in mobile category and 16 in WebMonetization category. Along with appearing in top 10 four times at the [individual criteria](https://medium.com/js13kgames/top-games-from-given-criteria-c5066b5fe38d).
+FOURFOLD was my entry to the [JS13K](https://js13kgames.com) games competition, it [ranked](https://2020.js13kgames.com/#winners) way better than my expectations; 7 overall, 4 in mobile category and 16 in WebMonetization category. Along with appearing in top 10 four times at the [individual criteria](https://medium.com/js13kgames/top-games-from-given-criteria-c5066b5fe38d).
 
 Play it on the [jam page](https://js13kgames.com/entries/fourfold) or on [itch.io](https://rottencandy.itch.io/fourfold).
 ![Screengrab of the game](game.png)
