@@ -110,7 +110,7 @@ I will probably get bored of this very quickly.
 Largely because `fzf` has limited support for pattern matching (although the exact-match mode using `'` is quite handy),
 and this method lacks the persistence of the quickfix list.
 
-But this is still something I'd use when I'm just lazy to `:grep`,
+But this is still something I'd use when I'm too lazy to `:grep`,
 and just want to immediately jump to a location that pops into my mind.
 
 Here's a slightly cleaned up version, if you'd like to try it:
