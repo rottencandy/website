@@ -36,4 +36,8 @@ details > summary {
   cursor: pointer;
 }
 
+// Only show anchor when header is hovered
+h2 > a, h4 > a { display: none; }
+h2:hover > a, h4:hover > a { display: inline; }
+
 @import "sakura";
