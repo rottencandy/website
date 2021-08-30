@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://saud.gq"
+base_url = "https://saud.wtf"
 
 # The site title and description; used in feeds by default.
 title = "Saud"
