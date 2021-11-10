@@ -29,4 +29,5 @@ jobs:
           source-directory: 'public'
           destination-github-username: 'rottencandy'
           destination-repository-name: 'rottencandy.github.io'
+          target-branch: 'master'
           user-email: md.saud020@gmail.com
