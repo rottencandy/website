@@ -2,7 +2,7 @@
 base_url = "https://saud.wtf"
 
 # The site title and description; used in feeds by default.
-title = "Saud"
+title = "Saud's Blog"
 description = "Personal website."
 
 # Whether to automatically compile all Sass files in the sass directory
@@ -15,6 +15,10 @@ highlight_theme = "gruvbox-dark"
 
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
+
+# Generate RSS feed
+generate_feed = true
+feed_filename = "rss.xml"
 
 [extra]
 # Put all your custom variables here
