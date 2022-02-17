@@ -39,10 +39,6 @@ body {
     word-wrap: break-word;
     -ms-word-break: break-all;
     word-break: break-word;
-    -ms-hyphens: auto;
-    -moz-hyphens: auto;
-    -webkit-hyphens: auto;
-    hyphens: auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -83,6 +79,10 @@ a {
         border-bottom: 2px solid $color-text;
     }
 
+    &:visited {
+        color: darken($color-blossom, 10%);
+    }
+
 }
 
 ul {
@@ -111,7 +111,7 @@ blockquote p {
     margin-bottom: 0;
 }
 
-img {
+img, video {
     height: auto;
     max-width: 100%;
     margin-top: 0px;
@@ -127,6 +127,7 @@ pre {
     overflow-x: auto;
     margin-top: 0px;
     margin-bottom: 2.5rem;
+    font-size: 0.9em;
 }
 
 code {
@@ -140,6 +141,7 @@ pre > code {
     padding: 0;
     background-color: transparent;
     white-space: pre;
+    font-size: 1em;
 }
 
 /* Tables */
@@ -196,7 +198,7 @@ textarea {
     }
 }
 
-textarea, select, input[type] {
+textarea, select, input {
     color: $color-text;
     padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
     margin-bottom: 10px;

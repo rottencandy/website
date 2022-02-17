@@ -1,5 +1,5 @@
 # [Click me](https://rottencandy.github.io)
 
-This is a dummy repo that contains the static files automatically generated using GitHub Actions.
+This is a dummy repository that contains automatically generated static files.
 
 The actual source can be found [here](https://github.com/rottencandy/website).
