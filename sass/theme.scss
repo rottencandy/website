@@ -19,8 +19,8 @@ $font-family-heading: "Quicksand", "Segoe UI", Helvetica, sans-serif;
 $font-family-base: "Open Sans", "Segoe UI", Helvetica, sans-serif;
 
 /*
-* Extra styles
-*/
+ * Extra styles
+ */
 
 .content {
   padding-bottom: 50px;
@@ -37,7 +37,19 @@ details > summary {
 }
 
 // Only show anchor when header is hovered
-h2 > a, h4 > a { display: none; }
-h2:hover > a, h4:hover > a { display: inline; }
+// Note: if done with h3, it causes all links in posts page to disappear
+h2 > a,
+h4 > a {
+  display: none;
+}
+
+h2:hover > a,
+h4:hover > a {
+  display: inline;
+}
 
 @import "sakura";
+
+/*
+ * Sakura overrides
+ */
