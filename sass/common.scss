@@ -1,18 +1,3 @@
-/* Duotone color scheming:
-   Uses blossom as the revealing/stark color
-   Uses fade as the more prominent color
- */
-$color-blossom: #008b6a;
-$color-fade: #4ed0eb;
-
-/* bg color is used for the background of the page
-   bg-alt is used for code-blocks etc
- */
-$color-bg: #e9e9e9;
-$color-bg-alt: #f3f3f3;
-
-/* color of all the text on the page */
-$color-text: #333333;
 $font-size-base: 1.8rem;
 
 $font-family-heading: "Quicksand", "Segoe UI", Helvetica, sans-serif;
@@ -47,8 +32,6 @@ h2:hover > a,
 h4:hover > a {
   display: inline;
 }
-
-@import "sakura";
 
 /*
  * Sakura overrides

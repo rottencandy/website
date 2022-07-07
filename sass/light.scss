@@ -1,0 +1,18 @@
+/* Duotone color scheming:
+   Uses blossom as the revealing/stark color
+   Uses fade as the more prominent color
+ */
+$color-blossom: #008b6a;
+$color-fade: #8e902b;
+
+/* bg color is used for the background of the page
+   bg-alt is used for code-blocks etc
+ */
+$color-bg: #e9e9e9;
+$color-bg-alt: #f3f3f3;
+
+/* color of all the text on the page */
+$color-text: #333333;
+
+@import "common";
+@import "sakura";
