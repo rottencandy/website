@@ -1,4 +1,4 @@
-/* Sakura.css v1.3.1
+/* Sakura.css v1.4.1
  * ================
  * Minimal css theme.
  * Project: https://github.com/oxalorg/sakura/
@@ -74,13 +74,13 @@ a {
     text-decoration: none;
     color: $color-blossom;
 
+    &:visited {
+        color: darken($color-blossom, 10%);
+    }
+
     &:hover {
         color: $color-fade;
         border-bottom: 2px solid $color-text;
-    }
-
-    &:visited {
-        color: darken($color-blossom, 10%);
     }
 
 }
@@ -130,7 +130,7 @@ pre {
     font-size: 0.9em;
 }
 
-code {
+code, kbd, samp {
     font-size: 0.9em;
     padding: 0 0.5em;
     background-color: $color-bg-alt;
