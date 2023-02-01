@@ -1,9 +1,10 @@
-+++
-title =  "Web Interface for Retroshare - Final Update"
-description = "The high-level architecture of the application, code patterns, and roadmap for further development."
-date =  2019-08-25
-slug = "retroshare-update-4"
-+++
+---
+title: Web Interface for Retroshare - Final Update
+description: The high-level architecture of the application, code patterns, and roadmap for further development.
+date: 2019-08-25
+url: ./retroshare-update-4/
+type: article
+---
 
 > This is a mirror of a [post](https://blog.freifunk.net/2019/08/25/retroshare-web-interface-final-update/) I wrote on the [Freifunk blog](https://blog.freifunk.net).
 
@@ -124,7 +125,7 @@ It’s the one containing all the elements under the `navbar`.
 All top level tab layouts use this and extend upon it.
 It can hold both full and half-width widgets, and position them according to the space taken by each.
 
-{{ imgcaption(src="rs-page.png", alt="Blank layout", caption="The default blank layout created by the tab-page class.") }}
+![Blank layout](/img/retroshare-4/rs-page.png "The default blank layout created by the tab-page class.")
 
 The next is the `sidebar` class, which defines the sidebar on the left of some tabs, allowing to choose sub sections within the tab.
 It must be used when there are multiple sections but are logically grouped inside the same tab.
@@ -139,13 +140,13 @@ m(widget.SideBar, {
 });
 ```
 
-{{ imgcaption(src="rs-sidebar.png", alt="Sidebar", caption="sidebar class used in the config tab.") }}
+![Sidebar](/img/retroshare-4/rs-sidebar.png "sidebar class used in the config tab.")
 
 The `widget` class is used as a preliminary frame for displaying small groups of input types together.
 For consistency, a directly interactable input must never be shown directly inside tab-page, but must be inside at least one `widget` frame.
 For additional uniformity, I have been using the `<h3>` followed by the `<hr>` tags as the immediately following elements to display and categorize a frame’s contents.
 
-{{ imgcaption(src="rs-widget.png", alt="widget", caption="A widget being used to create the interface for adding certificates.")}}
+![widget](/img/retroshare-4/rs-widget.png "A widget being used to create the interface for adding certificates.")
 
 The `progressbar` widget is a combination of a `<span>` tag relatively placed inside a `<div>` tag using the block-inline display attribute.
 To create the `progressbar` in mithril, just use:
@@ -162,7 +163,7 @@ m('.progressbar', {
 }, rate));
 ```
 
-{{ imgcaption(src="rs-progress.png", alt="progress bar", caption="progressbars used in files tab.")}}
+![progress bar](/img/retroshare-4/rs-progress.png "progressbars used in files tab.")
 
 And the CSS will handle the rest.
 
@@ -173,7 +174,7 @@ m('.tooltip', [
   m('.tooltiptext', 'content visible when hovered'),
 ]);
 ```
-{{ imgcaption(src="rs-tooltip.png", alt="tooltip", caption="Example use of tooltip.")}}
+![tooltip](/img/retroshare-4/rs-tooltip.png "Example use of tooltip.")
 
 A modal or popup box can be used to display content which might be triggered by a user’s action, or can display information that requires immediate attention of the user.
 This is also present in the `widgets.js` file.
@@ -184,7 +185,7 @@ It also takes in other mithril components as attributes, allowing it to display 
 widgets.popupMessage([/* Array of components to render */]);
 ```
 
-{{ imgcaption(src="rs-popup.png", alt="popup", caption="The popup view used in files tab.")}}
+![popup](/img/retroshare-4/rs-popup.png "The popup view used in files tab.")
 
 Creating custom input types making use of the `<input>` tag is incredibly easy in mithril, but may initially be confusing to programmers used to vanilla JavaScript for event handling.
 Normally, to create a JS-controlled input field, you would do something like:

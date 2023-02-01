@@ -1,0 +1,18 @@
+---
+layout: base.njk
+---
+
+<header>
+    <a href="/">Home</a> | <a href="/blog">Posts</a>
+
+    <h1 class="w500">{{ title | safe }}</h1>
+    <strong class="w400"><time datetime="{{ date | date }}">{{ date | date }}</time></strong>
+</header>
+
+<hr/>
+
+<main>
+    {{ content | safe }}
+</main>
+
+<hr/>

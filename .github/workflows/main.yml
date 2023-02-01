@@ -13,20 +13,28 @@ jobs:
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
+
     steps:
-      - uses: actions/checkout@master
+      # Clone repository
+      - uses: actions/checkout@v3
 
-      - name: Build website
-        uses: shalzz/zola-deploy-action@master
-        env:
-          BUILD_ONLY: true
+      # Grab deno
+      - name: Setup Deno environment
+        uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.x
 
+      # Build site
+      - name: Build site
+        run: deno task build --location=https://rottencandy.github.io
+
+      # Push to site repo
       - name: Push to repo
         uses: cpina/github-action-push-to-another-repository@main
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
-          source-directory: 'public'
+          source-directory: '_site'
           destination-github-username: 'rottencandy'
           destination-repository-name: 'rottencandy.github.io'
           target-branch: 'master'

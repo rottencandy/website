@@ -1,16 +1,15 @@
-+++
-title = "Making of FOURFOLD"
-description = "Postmortem of a game I made for the JS13k game competition."
-date = 2020-10-10
-
-[extra]
-cover = "game.png"
-+++
+---
+title: Making of FOURFOLD
+description: Postmortem of a game I made for the JS13k game competition.
+date: 2020-10-10
+type: article
+page_cover: img/fourfold/game.png
+---
 
 FOURFOLD was my entry to the [JS13K](https://js13kgames.com) games competition, it [ranked](https://2020.js13kgames.com/#winners) way better than my expectations; 7 overall, 4 in mobile category and 16 in WebMonetization category. Along with appearing in top 10 four times at the [individual criteria](https://medium.com/js13kgames/top-games-from-given-criteria-c5066b5fe38d).
 
 Play it on the [jam page](https://js13kgames.com/entries/fourfold) or on [itch.io](https://rottencandy.itch.io/fourfold).
-![Screengrab of the game](game.png)
+![Screengrab of the game](/img/fourfold/game.png)
 
 After being absolutely stumped by what people were pulling off with such a size limit in the past years, I decided it was time I too joined in on the fun.
 
@@ -47,7 +46,7 @@ I may add them in the future, if I ever get motivated enough to turn this into a
 I did however create an "orange" platform, which was like yellow, but had to be stepped on twice before it dissapeared. I scraped it out in the end because it wasn't fun and made levels rather mundane.
 
 The rendering is really straightforward, because the platforms are just standard cubes. And since there is no rotation, I saved some bytes by drawing only the visible part of a cube:
-![Sketch of the visible part of cube](platform.png)
+![Sketch of the visible part of cube](/img/fourfold/platform.png)
 Only half the vertices required! The shader handles the coloring and shadows. If you observe closely, you'll notice that the platform color fades out into the background from top to bottom.
 
 ## Player
@@ -85,7 +84,7 @@ It had to be simple and easy to use, while also allowing to quickly create any k
 I used the editor to create all the levels, which helped me iterate on and improve it.
 
 The editor without the background. Looks pretty neat actually:
-![Screengrab of the editor](editor.png)
+![Screengrab of the editor](/img/fourfold/editor.png)
 
 - The pause "icon" is simply two `I`s.
 - The finish and reset buttons are just unicode symbols.
@@ -106,7 +105,7 @@ There's no way I could afford to throw in a font file, so I rolled with a web-sa
 Looking at [cssfontsack.com](https://www.cssfontstack.com), I picked `Trebuchet`, it is sans-serif and seemed widely available.
 
 A very simple way to make default fonts look better is to use a smaller `font-width`. Thin fonts really tend to stand out:
-![A comparision of fonts](fonts.png)
+![A comparision of fonts](/img/fourfold/fonts.png)
 All it takes is a single line of CSS:
 ```css
 font: 100 2.5rem Trebuchet, sans-serif;
@@ -151,7 +150,7 @@ I'm obsessed with it! The web development ecosystem desperately needs more such 
 Compression is done with good 'ol [zip](https://github.com/LuaDist/zip), turning on all the options for maximum compression.
 
 Anyway, here's the obligatory "All the code in a single image":
-![Screenshot of minified code](code.png)
+![Screenshot of minified code](/img/fourfold/code.png)
 Along with that, there's a tiny amount of HTML required to setup the canvas, along with a bit of CSS sprinkled in for the UI.
 
 ## Takeaways

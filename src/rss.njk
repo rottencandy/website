@@ -1,0 +1,25 @@
+---
+url: ./rss.xml
+---
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- https://www.xul.fr/en-xml-rss.html -->
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>saud.wtf</title>
+        <link>https://saud.wtf</link>
+        <description>saud's blog</description>
+        <language>en</language>
+        <atom:link href="{{ url | url(true) | safe }}" rel="self" type="application/rss+xml"/>
+        <generator>Lume</generator>
+        {% for page in search.pages("type=article", "date=desc") %}
+        <item>
+            <title>{{ page.data.title | safe }}</title>
+            <link>{{ page.data.url | url(true) | safe }}</link>
+            <guid>{{ page.data.url | url(true) | safe }}</guid>
+            <description>{{ page.data.description | safe }}</description>
+            <language>en</language>
+            <pubDate>{{ page.data.date }}</pubDate>
+        </item>
+        {% endfor %}
+    </channel>
+</rss>

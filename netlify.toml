@@ -5,12 +5,12 @@
   # the build. This is relative to the base directory if one has been set, or the
   # root directory if a base has not been set. This sample publishes the
   # directory located at the absolute path "root/project/build-output"
-  publish = "public/"
+  publish = "_site"
 
-  # Default build command.
-  command = "zola build"
-
-  environment = { ZOLA_VERSION = "0.11.0" }
+  command = """
+    curl -fsSL https://deno.land/x/install/install.sh | sh && \
+    /opt/buildhome/.deno/bin/deno task build \
+  """
 
 [[headers]]
   for = "/*"

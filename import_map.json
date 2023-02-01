@@ -1,0 +1,6 @@
+{
+  "imports": {
+    "lume/": "https://deno.land/x/lume@v1.15.1/",
+    "highlightjs/": "https://unpkg.com/@highlightjs/cdn-assets@11.7.0/es/"
+  }
+}

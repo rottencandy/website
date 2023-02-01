@@ -1,0 +1,20 @@
+---
+layout: base.njk
+title: Blog
+---
+
+<header>
+    <a href="/">Home</a>
+</header>
+
+<h1 class="w500">
+    {{ title | safe }}
+    <sup><a href="/rss.xml"><button title="RSS feed">feed</button></a></sup>
+</h1>
+
+<main>
+    {% for page in search.pages("type=article", "date=desc") %}
+    <h3 class="w400"><a href="{{ page.data.url | safe }}">{{ page.data.title }}</a></h3>
+    <p>{{ page.data.description | safe }}</p>
+    {% endfor %}
+</main>

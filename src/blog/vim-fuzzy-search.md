@@ -1,8 +1,9 @@
-+++
-title = "Quick & dirty project-wide fuzzy search in vim"
-description = "Fuzzy searching in vim, the worst possible way."
-date = 2021-06-10
-+++
+---
+title: Quick & dirty project-wide fuzzy search in vim
+description: Fuzzy searching in vim, the worst possible way.
+date: 2021-06-10
+type: article
+---
 
 The most common method of searching files for text using vim is with the `:grep` command.
 It conveniently fills up the quickfix list with all files containing matches, allowing easy navigation.
@@ -102,7 +103,7 @@ We can also make `bat` highlight the matching line, and make `fzf` scroll the pr
 
 The overall result feels really fast and snappy, even on large codebases.
 Here's me casually browsing the neovim codebase:
-![Screenshot of the fuzzy searching in action](screenshot.png)
+![Screenshot of the fuzzy searching in action](/img/vim-fuzzy-search/screenshot.png)
 
 ## Conclusion
 

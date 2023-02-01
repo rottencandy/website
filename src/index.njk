@@ -1,29 +1,27 @@
-{% extends "base.html" %}
+---
+layout: base.njk
+title: Saud's Website
+meta:
+- name: description
+  content: "Saud's personal website"
+---
 
-{% block meta %}
-<title>Saud | Home</title>
-<meta name="description" content="Saud's personal website" />
-{% endblock meta %}
-
-{% block content %}
 <main>
-  <h3 class="w400">SAUD'S HOMEPAGE</h3>
-  Hello I'm saud
-  <dl>
-    <dd><a href="/blog">Blog</a></dd>
-    <dd>Code: <a rel="me" href="https://github.com/rottencandy">GitHub</a></dd>
-    <dd>Email: mdsaud〖@〗pm.me</dd>
-    <dd>Matrix: <a href="https://matrix.to/#/@rcandy:matrix.org">@rcandy:matrix.org</a></dd>
-    <dd>
-      Elsewhere: <a rel="me" href="https://mastodon.xyz/@saud">Fediverse</a>,
-      <a rel="me" href="https://keybase.io/rottencandy">Keybase</a>,
-      <a rel="me" href="https://twitter.com/rotttencandy">Twitter</a>
-    </dd>
-  </dl>
+    <h3 class="w400">SAUD'S HOMEPAGE</h3>
+    Hello I'm saud
+    <dl>
+        <dd><a href="/blog">Blog</a></dd>
+        <dd>Code: <a rel="me" href="https://github.com/rottencandy">GitHub</a></dd>
+        <dd>Email: mdsaud〖@〗pm.me</dd>
+        <dd>Matrix: <a href="https://matrix.to/#/@rcandy:matrix.org">@rcandy:matrix.org</a></dd>
+        <dd>
+            Fediverse: <a rel="me" href="https://mastodon.xyz/@saud">saud@mastodon.xyz</a>
+        </dd>
+    </dl>
 
-  <details>
-    <summary>PGP Key</summary>
-    <pre>
+    <details>
+        <summary>PGP Key</summary>
+        <pre>
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
 mQINBF7U2UMBEADfizAvhQEGTYZwfQ4Sv7pBN3uQ1PQsjUBp2YXJltpwvBnmUXYI
@@ -76,7 +74,6 @@ sdTiiiYl4LnYBzD1gCJr6BTqyp7e+uDhs0Gh9sNBXUh4NwJuZe45Dv4f6pN83FvJ
 dApw14VMSXoRt8A=
 =bELR
 -----END PGP PUBLIC KEY BLOCK-----
-    </pre>
-  </details>
+        </pre>
+    </details>
 </main>
-{% endblock content %}

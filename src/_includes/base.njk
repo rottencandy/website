@@ -1,0 +1,47 @@
+---
+language: en
+---
+
+<!DOCTYPE html>
+<html lang="{{ language }}">
+    <head>
+        <title>{{ title | safe }} | Saud</title>
+        {{ comp.meta({ charset: "utf-8" }) | safe }}
+
+        {{ comp.meta({ name: "monetization", content: "$ilp.uphold.com/wJiQfZf9NYg8" }) | safe }}
+        {{ comp.meta({ name: "viewport", content: "width=device-width, initial-scale=1" }) | safe }}
+        {{ comp.meta({ name: "author", content: "saud" }) | safe }}
+
+        {{ comp.meta({ property: "og:url", content: url | url(true) }) | safe }}
+        {{ comp.meta({ property: "og:type", content: "website" }) | safe }}
+        {{ comp.meta({ property: "og:title", content: title }) | safe }}
+        {{ comp.meta({ property: "og:locale", content: "en_US" }) | safe }}
+
+        {{ comp.meta({ name: "twitter:title", content: title }) | safe }}
+        {{ comp.meta({ name: "twitter:creator", content: "@rotttencandy" }) | safe }}
+        {{ comp.meta({ name: "twitter:card", content: "summary" }) | safe }}
+
+        {% if description %}
+        {{ comp.meta({ property: "og:description", content: description }) | safe }}
+        {{ comp.meta({ name: "description", content: description }) | safe }}
+        {% endif %}
+
+        {% if page_cover %}
+        {{ comp.meta({ property: "og:image", content: page_cover | url(true) }) | safe }}
+        {% endif %}
+
+        {% for m in meta %}
+        {{ comp.meta(m) | safe }}
+        {% endfor %}
+        <link rel="stylesheet" href="/light.css" />
+        <link rel="stylesheet" href="/dark.css" media="screen and (prefers-color-scheme: dark)" />
+        <link href="https://pagecdn.io/lib/easyfonts/open-sans.css" rel="stylesheet" />
+        <link href="https://pagecdn.io/lib/easyfonts/quicksand.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="content">
+            {{ content | safe }}
+        </div>
+    </body>
+</html>

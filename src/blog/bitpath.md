@@ -1,14 +1,13 @@
-+++
-title = "Bit Path - Lisp and game development"
-description = "Making a game in a lisp"
-date = 2022-06-10
-
-[extra]
-cover = "game.png"
-+++
+---
+title: Bit Path - Lisp and game development
+description: Making a game in a lisp
+date: 2022-06-10
+type: article
+page_cover: img/bitpath/game.png
+---
 
 You can play Bit Path [here](https://rottencandy.itch.io/bitpath).
-![Screengrab of the game](game.png)
+![Screengrab of the game](/img/bitpath/game.png)
 Learning a lisp has been on my to-do list for too long,
 so was trying it out for game development.
 There has been [a](https://github.com/fleabitdev/glsp) [lot](https://github.com/makuto/cakelisp) [of](https://github.com/carp-lang/Carp) interesting activity in the gamedev lisp space which I'm very intrigued by.
@@ -25,7 +24,7 @@ even though I never wrote lisps before.
 
 
 The platform/framework I used to make the game is [TIC-80](https://github.com/nesbox/TIC-80).
-![TIC-80 in action](tic-80.png)
+![TIC-80 in action](/img/bitpath/tic-80.png)
 This is commonly referred to as a fantasy console,
 it emulates a retro videogame console that never existed.
 What I really like about it is the artificial limitations it imposes,
@@ -51,16 +50,16 @@ definitely the easiest and most intuitive out of all programming languages I've 
 
 
 Here's the first macro I made:
-```cl
+```lisp
 (macro enum! [...]
   `(local ,[...] ,(icollect [i (ipairs [...])] i)))
 ```
 This basically converts this:
-```cl
+```lisp
 (enum! E1 E2 E3)
 ```
 Into this:
-```cl
+```lisp
 (local [E1 E2 E3] [1 2 3])
 ```
 Which is just variable assignment.
