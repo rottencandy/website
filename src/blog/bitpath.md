@@ -12,7 +12,7 @@ Learning a lisp has been on my to-do list for too long,
 so was trying it out for game development.
 There has been [a](https://github.com/fleabitdev/glsp) [lot](https://github.com/makuto/cakelisp) [of](https://github.com/carp-lang/Carp) interesting activity in the gamedev lisp space which I'm very intrigued by.
 Even Naughty Dog is [famously known](https://en.wikipedia.org/wiki/Game_Oriented_Assembly_Lisp) to have used lisps to make games.
-So when the first [Fennel game jam](https://github.com/rottencandy/fennel-jam) was announced,
+So when the first [Fennel game jam](https://itch.io/jam/fennel-game-jam-1) was announced,
 I used it as the opportunity I was waiting for, and made a game with a lisp.
 
 
