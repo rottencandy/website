@@ -1,38 +1,50 @@
+/*
+ * Sakura variables
+ */
 $font-size-base: 1.8rem;
-
 $font-family-heading: "Quicksand", "Segoe UI", Helvetica, sans-serif;
 $font-family-base: "Open Sans", "Segoe UI", Helvetica, sans-serif;
+
+@import "sakura";
+
+/*
+ * Sakura overrides
+ */
+
+pre {
+    padding: 0;
+
+    &.pgpblock {
+        padding: 1em;
+    }
+}
 
 /*
  * Extra styles
  */
 
 .content {
-  padding-bottom: 50px;
+    padding-bottom: 50px;
 }
 
 footer,
 figcaption {
-  color: #777;
-  font-size: $font-size-base * 0.8;
+    color: #777;
+    font-size: $font-size-base * 0.8;
 }
 
 details > summary {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 // Only show anchor when header is hovered
 // Note: if done with h3, it causes all links in posts page to disappear
-h2 > a,
-h4 > a {
-  display: none;
-}
+a {
+    h2 > &, h4 > & {
+        display: none;
+    }
 
-h2:hover > a,
-h4:hover > a {
-  display: inline;
+    h2:hover > &, h4:hover > & {
+        display: inline;
+    }
 }
-
-/*
- * Sakura overrides
- */
