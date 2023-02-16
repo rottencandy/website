@@ -1,0 +1,74 @@
+@use "sass:math";
+
+$poly_size: 60px;
+$poly_height: 60px;
+$poly_color: $color-blossom;
+$poly_hyp: math.hypot(calc($poly_size / 2), calc($poly_height / 2));
+$poly_spin_spd: 7s;
+
+.polygon {
+    padding: 1em;
+    width: calc($poly_size + 10px);
+    margin: auto;
+    filter: drop-shadow(1px -1px 5px $poly_color);
+
+    & > .spinner {
+        animation: $poly_spin_spd linear infinite poly-spin;
+        width: $poly_size;
+        height: $poly_size;
+        transform-style: preserve-3d;
+        backface-visibility: hidden;
+
+        & > .face {
+            position: absolute;
+            border: calc($poly_size / 2) solid transparent;
+
+            &.f0, &.f1, &.f2, &.f3 {
+                border-bottom: $poly_hyp solid $poly_color;
+                border-top: 0 solid transparent;
+                transform-origin: bottom center;
+            }
+
+            &.f4, &.f5, &.f6, &.f7 {
+                border-top: $poly_hyp solid $poly_color;
+                border-bottom: 0 solid transparent;
+                transform-origin: top center;
+            }
+
+            @for $i from 0 through 3 {
+                &.f#{$i} {
+                    transform: rotateY(90deg * $i) translateZ(calc($poly_size / 2)) rotateX(45deg);
+                    animation: calc($poly_spin_spd / 2) linear infinite alternate poly-color-top;
+                    animation-delay: calc($i / 4) * -$poly_spin_spd;
+                }
+            }
+
+            // mathematically possible to do this in a single loop,
+            // but I prefer my code readable
+            @for $i from 0 through 3 {
+                &.f#{$i + 4} {
+                    transform: rotateY(90deg * $i) translateY(calc($poly_hyp)) translateZ(calc($poly_size / 2)) rotateX(-45deg);
+                    animation: calc($poly_spin_spd / 2) linear infinite alternate poly-color-bottom;
+                    animation-delay: calc($i / 4) * -$poly_spin_spd;
+                }
+            }
+        }
+    }
+}
+
+@keyframes poly-spin {
+    from { transform: perspective(400px) rotateX(-10deg) rotateY(0deg) }
+    to { transform: perspective(400px) rotateX(-10deg) rotateY(360deg) }
+}
+
+@keyframes poly-color-top {
+    0% { border-bottom-color: lighten($poly_color, 5%) }
+    10% { border-bottom-color: darken($poly_color, 0%) }
+    100% { border-bottom-color: darken($poly_color, 15%) }
+}
+
+@keyframes poly-color-bottom {
+    0% { border-top-color: darken($poly_color, 1%) }
+    90% { border-top-color: darken($poly_color, 15%) }
+    100% { border-top-color: darken($poly_color, 20%) }
+}
