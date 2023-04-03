@@ -1,8 +1,11 @@
 {
-  "importMap": "./import_map.json",
   "tasks": {
     "lume": "echo \"import 'lume/cli.ts'\" | deno run --unstable -A -",
     "build": "deno task lume",
     "serve": "deno task lume -s"
+  },
+  "imports": {
+    "lume/": "https://deno.land/x/lume@v1.16.2/",
+    "highlightjs/": "https://unpkg.com/@highlightjs/cdn-assets@11.7.0/es/"
   }
 }
