@@ -8,6 +8,8 @@ import sitemap from "lume/plugins/sitemap.ts";
 import { imgcaption } from "./plugin/imgcaption.ts";
 import lang_javascript from "highlightjs/languages/javascript.min.js";
 import lang_lisp from "highlightjs/languages/lisp.min.js";
+import lang_vim from "highlightjs/languages/vim.min.js";
+import lang_bash from "highlightjs/languages/bash.min.js";
 
 const markdown = {
   plugins: [imgcaption],
@@ -31,11 +33,13 @@ const site = lume({
     languages: {
       javascript: lang_javascript,
       lisp: lang_lisp,
+      vim: lang_vim,
+      bash: lang_bash,
     },
   }))
   .remoteFile(
     "_includes/css/code.css",
-    "https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/styles/monokai.min.css",
+    "https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.8.0/build/styles/monokai.min.css",
   )
   .copy("static", ".");
 
