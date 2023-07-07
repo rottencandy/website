@@ -8,7 +8,7 @@ page_cover: img/fourfold/game.png
 
 FOURFOLD was my entry to the [JS13K](https://js13kgames.com) games competition, it [ranked](https://2020.js13kgames.com/#winners) way better than my expectations; 7 overall, 4 in mobile category and 16 in WebMonetization category. Along with appearing in top 10 four times at the [individual criteria](https://medium.com/js13kgames/top-games-from-given-criteria-c5066b5fe38d).
 
-Play it on the [jam page](https://js13kgames.com/entries/fourfold) or on [itch.io](https://rottencandy.itch.io/fourfold).
+Play it on the [jam page](https://js13kgames.com/entries/fourfold) or on [itch.io](https://si-nk.itch.io/fourfold).
 ![Screengrab of the game](/img/fourfold/game.png)
 
 After being absolutely stumped by what people were pulling off with such a size limit in the past years, I decided it was time I too joined in on the fun.

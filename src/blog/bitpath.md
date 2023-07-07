@@ -6,7 +6,7 @@ type: article
 page_cover: img/bitpath/game.png
 ---
 
-You can play Bit Path [here](https://rottencandy.itch.io/bitpath).
+You can play Bit Path [here](https://si-nk.itch.io/bitpath).
 ![Screengrab of the game](/img/bitpath/game.png)
 Learning a lisp has been on my to-do list for too long,
 so was trying it out for game development.
