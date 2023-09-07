@@ -1,4 +1,4 @@
-/* Sakura.css v1.4.1
+/* Sakura.css v1.5.0
  * ================
  * Minimal css theme.
  * Project: https://github.com/oxalorg/sakura/
@@ -150,6 +150,7 @@ table {
     text-align: justify;
     width: 100%;
     border-collapse: collapse;
+    margin-bottom: 2rem;
 }
 
 td, th {
@@ -171,7 +172,7 @@ textarea {
     width: 100%;
 }
 
-.button, button, input[type="submit"], input[type="reset"], input[type="button"] {
+.button, button, input[type="submit"], input[type="reset"], input[type="button"], input[type=file]::file-selector-button {
     display: inline-block;
     padding: 5px 10px;
     text-align: center;
@@ -190,11 +191,15 @@ textarea {
         opacity: .5;
     }
 
-    &:focus:enabled, &:hover:enabled {
+    &:hover {
         background-color: $color-fade;
-        border-color: $color-fade;
         color: $color-bg;
         outline: 0;
+    }
+    
+    &:focus-visible {
+        outline-style: solid;
+        outline-width: 2px;
     }
 }
 
@@ -223,3 +228,4 @@ label, legend, fieldset {
     margin-bottom: .5rem;
     font-weight: 600;
 }
+
