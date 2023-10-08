@@ -8,7 +8,7 @@ title: Blog
 </nav>
 
 <header>
-    <h1 class="w500">
+    <h1>
         {{ title | safe }}
         <sup>
             <a href="/rss.xml"><button title="RSS feed">feed</button></a>
@@ -19,7 +19,7 @@ title: Blog
 <main>
     <section>
         {% for page in search.pages("type=article", "date=desc") %}
-        <h3 class="w400">
+        <h3>
             <a href="{{ page.data.url | safe }}">{{ page.data.title }}</a>
         </h3>
 
