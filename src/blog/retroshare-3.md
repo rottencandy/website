@@ -3,7 +3,6 @@ title: Web Interface for Retroshare - Update 2
 description: Second progress update. More details about the revamped UI.
 date: 2019-07-24
 url: ./retroshare-update-3/
-type: article
 page_cover: img/retroshare-3/rs-login.jpg
 ---
 

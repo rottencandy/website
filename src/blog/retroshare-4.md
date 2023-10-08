@@ -3,7 +3,6 @@ title: Web Interface for Retroshare - Final Update
 description: The high-level architecture of the application, code patterns, and roadmap for further development.
 date: 2019-08-25
 url: ./retroshare-update-4/
-type: article
 ---
 
 > This is a mirror of a [post](https://blog.freifunk.net/2019/08/25/retroshare-web-interface-final-update/) I wrote on the [Freifunk blog](https://blog.freifunk.net).

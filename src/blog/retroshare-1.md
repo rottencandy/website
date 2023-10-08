@@ -3,7 +3,6 @@ title: A new Web Interface for Retroshare
 description: A post about the reason behind creating a new web interface for Retroshare.
 date: 2019-05-23
 url: ./a-new-web-interface-for-retroshare/
-type: article
 ---
 
 > This is a mirror of a [post](https://blog.freifunk.net/2019/05/23/a-new-web-interface-for-retroshare) I wrote on the [Freifunk blog](https://blog.freifunk.net).

@@ -2,7 +2,6 @@
 title: Bit Path - Lisp and game development
 description: Making a game in a lisp
 date: 2022-06-10
-type: article
 page_cover: img/bitpath/game.png
 ---
 

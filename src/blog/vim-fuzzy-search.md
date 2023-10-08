@@ -2,7 +2,6 @@
 title: Quick & dirty project-wide fuzzy search in vim
 description: Fuzzy searching in vim, the worst possible way.
 date: 2021-06-10
-type: article
 ---
 
 The most common method of searching files for text using vim is with the `:grep` command.

@@ -3,7 +3,6 @@ title: Web Interface for Retroshare - Update 1
 description: Update on the development process of Retroshare's new web interface.
 date: 2019-06-23
 url: ./retroshare-update-2/
-type: article
 ---
 
 > This is a mirror of a [post](https://blog.freifunk.net/2019/06/23/web-interface-for-retroshare-update-1/) I wrote on the [Freifunk blog](https://blog.freifunk.net).

@@ -2,7 +2,6 @@
 title: Make Conway's Game of Life in WebAssembly
 description: WebAssembly is a good option for computationally expensive tasks due to its predefined execution environment and memory granularity.
 date: 2021-04-13
-type: article
 page_cover: img/wasm-game-of-life/life.png
 ---
 

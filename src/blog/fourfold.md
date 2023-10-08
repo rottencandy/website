@@ -2,7 +2,6 @@
 title: Making of FOURFOLD
 description: Postmortem of a game I made for the JS13k game competition.
 date: 2020-10-10
-type: article
 page_cover: img/fourfold/game.png
 ---
 
