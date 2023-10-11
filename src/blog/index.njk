@@ -1,6 +1,7 @@
 ---
 layout: base.njk
 title: Blog
+type: page
 ---
 
 <nav>
@@ -11,7 +12,9 @@ title: Blog
     <h1>
         {{ title | safe }}
         <sup>
-            <a href="/rss.xml"><button title="RSS feed">feed</button></a>
+            <a class="nohover" href="/rss.xml">
+                <button title="RSS feed">feed</button>
+            </a>
         </sup>
     </h1>
 </header>
