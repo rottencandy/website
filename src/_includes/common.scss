@@ -38,6 +38,10 @@ details > summary {
     cursor: pointer;
 }
 
+button {
+    border-radius: 5px;
+}
+
 // Only show anchor when header is hovered
 // Note: if done with h3, it causes all links in posts page to disappear
 a {
@@ -49,3 +53,7 @@ a {
         display: inline;
     }
 }
+// remove default link hover styles
+// for using buttons inside links
+// TODO: switch to :has() once it's available
+a.nohover:hover { border-bottom: 0 }
