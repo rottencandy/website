@@ -1,0 +1,76 @@
+{
+    "projects": [
+        {
+            "name": "Vimkubectl",
+            "description": "Plugin to manage Kubernetes resources from vim.",
+            "image": "/img/projects/vimkubectl.png",
+            "imageAlt": "Screenshot of the plugin",
+            "source": "https://github.com/rottencandy/vimkubectl"
+        },
+        {
+            "name": "Fourfold",
+            "description": "WebGL game in 13kb made for the JS13k game jam.",
+            "image": "/img/fourfold/game.png",
+            "imageAlt": "Screenshot from the game",
+            "source": "https://github.com/rottencandy/js13k2020",
+            "link": "https://js13kgames.com/entries/fourfold"
+        },
+        {
+            "name": "RetroShare Web UI",
+            "description": "Web interface for Retroshare, built with Mithril.js.",
+            "image": "/img/retroshare-3/rs-login.jpg",
+            "imageAlt": "Screenshot of the interface",
+            "source": "https://github.com/RetroShare/RSNewWebUI"
+        },
+        {
+            "name": "Raymarching renderer",
+            "description": "Raymarching renderer that runs on the web using WebGL2.",
+            "image": "/img/projects/raymarching.png",
+            "imageAlt": "Screenshot from the renderer",
+            "source": "https://github.com/rottencandy/raymarching",
+            "link": "https://rottencandy.github.io/raymarching"
+        },
+        {
+            "name": "Bit Path",
+            "description": "Short puzzle game made in a lisp for the Fennel game jam.",
+            "image": "/img/bitpath/game.png",
+            "imageAlt": "Screenshot from the game",
+            "source": "https://github.com/rottencandy/fennel-jam",
+            "link": "https://rottencandy.itch.io/bitpath"
+        },
+        {
+            "name": "Grave Runner",
+            "description": "3D endless runner game written purely in CSS, without any JS.",
+            "image": "/img/projects/grave-runner.png",
+            "imageAlt": "Screenshot from the game",
+            "source": "https://github.com/rottencandy/nojsgame",
+            "link": "https://cssgame.saud.wtf"
+        },
+        {
+            "name": "This website",
+            "description": "You're looking at it!",
+            "image": "/img/projects/website.png",
+            "imageAlt": "Screenshot of the website",
+            "source": "https://github.com/rottencandy/website",
+            "link": "https://saud.wtf"
+        },
+        {
+            "name": "React Shuffle",
+            "description": "Example app that demonstrates how to use 3D CSS animations with React.",
+            "image": "/img/projects/react-shuffle.png",
+            "imageAlt": "Screenshot of the app",
+            "source": "https://github.com/rottencandy/react-cards",
+            "link": "https://react-shuffle.netlify.app/"
+        },
+        {
+            "name": "wlock",
+            "description": "[WIP] An experimental Wayland screen locker in Rust.",
+            "source": "https://github.com/rottencandy/wlock"
+        },
+        {
+            "name": "rcomp",
+            "description": "[WIP] A standalone X11 window compositor in Rust.",
+            "source": "https://github.com/rottencandy/rcomp"
+        }
+    ]
+}

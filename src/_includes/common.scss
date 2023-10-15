@@ -57,3 +57,47 @@ a {
 // for using buttons inside links
 // TODO: switch to :has() once it's available
 a.nohover:hover { border-bottom: 0 }
+
+.grid {
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    @media (max-width: 900px) { & { grid-template-columns: repeat(2, 1fr) } }
+    @media (max-width: 600px) { & { grid-template-columns: repeat(1, 1fr) } }
+
+    & > .item {
+        background: $color-bg-alt;
+        border-radius: 15px;
+        padding: 10px;
+
+        display: flex;
+        flex-direction: column;
+
+        // force aspect ratio
+        & > img {
+            width: 100%;
+            height: 120px;
+        }
+
+        & > p {
+            flex-grow: 1;
+        }
+
+        // override sakura default border for links
+        & > .links {
+            display: flex;
+            gap: 1rem;
+
+            & > a {
+                flex-grow: 1;
+
+                display: flex;
+                & > button {
+                    flex-grow: 1;
+                }
+
+            }
+        }
+    }
+}

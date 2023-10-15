@@ -3,4 +3,29 @@ layout: base.njk
 title: Projects
 ---
 
-Coming soon!
+<nav>
+    <a href="/">Home</a>
+</nav>
+
+<header>
+    <h1>
+        {{ title | safe }}
+    </h1>
+</header>
+
+
+<main>
+    <section>
+        <p>
+            Fun stuff I've built
+        </p>
+    </section>
+
+    <section>
+        <div class="grid">
+            {% for project in projects %}
+            {{ comp.card({ data: project }) | safe }}
+            {% endfor %}
+        </div>
+    </section>
+</main>
