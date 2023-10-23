@@ -1,8 +1,7 @@
 ---
 title: How to install nix on Fedora Workstation
 description: When you want to have your cake and eat it too
-date: 2023-09-20
-#page_cover: img/bitpath/game.png
+date: 2023-10-24
 ---
 
 I've been very satisfied with switching to [NixOS](https://nixos.org/) on my home systems recently,
