@@ -2,17 +2,34 @@
 layout: base.njk
 ---
 
-<header>
+<nav>
     <a href="/">Home</a> | <a href="/blog">Posts</a>
-
-    <h1>{{ title | safe }}</h1>
-    <strong><time datetime="{{ date | date }}">{{ date | date }}</time></strong>
-</header>
-
-<hr/>
+</nav>
 
 <main>
-    {{ content | safe }}
+    <article>
+        <header>
+            <h1>{{ title | safe }}</h1>
+            <strong>
+                <time datetime="{{ date | date }}">{{ date | date }}</time>
+            </strong>
+        </header>
+
+        <hr/>
+
+        <section>
+            {{ content | safe }}
+        </section>
+    </article>
+
+    <hr/>
+
+    <footer>
+        <p>
+            <em>
+                If you have any comments or suggestions, I'd love to know. Please feel free to email me.
+            </em>
+        </p>
+    </footer>
 </main>
 
-<hr/>
