@@ -11,7 +11,7 @@ layout: base.njk
         <header>
             <h1>{{ title | safe }}</h1>
             <strong>
-                <time datetime="{{ date | date }}">{{ date | date }}</time>
+                <time datetime="{{ date | date }}">{{ date | date('do LLL, yyyy') }}</time>
             </strong>
         </header>
 
@@ -32,4 +32,3 @@ layout: base.njk
         </p>
     </footer>
 </main>
-
