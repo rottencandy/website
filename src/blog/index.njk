@@ -25,12 +25,15 @@ type: page
 
 <main>
     <section>
-        {% for page in search.pages("type=article", "date=desc") %}
-        <h3>
-            <a href="{{ page.data.url | safe }}">{{ page.data.title }}</a>
-        </h3>
-
-        <p>{{ page.data.description | safe }}</p>
-        {% endfor %}
+        <ul>
+            {% for page in search.pages("type=article", "date=desc") %}
+            <li>
+                <h3>
+                    <a href="{{ page.data.url | safe }}">{{ page.data.title }}</a>
+                </h3>
+                <p>{{ page.data.description | safe }}</p>
+            </li>
+            {% endfor %}
+        <ul>
     </section>
 </main>
