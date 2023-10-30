@@ -39,7 +39,7 @@ const site = lume({
   }))
   .remoteFile(
     "_includes/css/code.css",
-    "https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.8.0/build/styles/monokai.min.css",
+    "https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/monokai.min.css",
   )
   .copy("static", ".");
 

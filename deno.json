@@ -5,7 +5,7 @@
     "serve": "deno task lume -s"
   },
   "imports": {
-    "lume/": "https://deno.land/x/lume@v1.19.2/",
-    "highlightjs/": "https://unpkg.com/@highlightjs/cdn-assets@11.8.0/es/"
+    "lume/": "https://deno.land/x/lume@v1.19.3/",
+    "highlightjs/": "https://unpkg.com/@highlightjs/cdn-assets@11.9.0/es/"
   }
 }
