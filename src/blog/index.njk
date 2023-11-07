@@ -31,7 +31,7 @@ type: page
                 <h3>
                     <a href="{{ page.data.url | safe }}">{{ page.data.title }}</a>
                 </h3>
-                <p>{{ page.data.description | safe }}</p>
+                <time datetime="{{ page.data.date | date }}">{{ page.data.date | date('do LLL, yyyy') }}</time>
             </li>
             {% endfor %}
         <ul>
