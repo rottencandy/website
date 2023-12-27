@@ -5,6 +5,7 @@ import terser from "lume/plugins/terser.ts";
 import date from "lume/plugins/date.ts";
 import codeHighlight from "lume/plugins/code_highlight.ts";
 import sitemap from "lume/plugins/sitemap.ts";
+import nunjucks from "lume/plugins/nunjucks.ts";
 import { imgcaption } from "./plugin/imgcaption.ts";
 import lang_javascript from "highlightjs/languages/javascript.min.js";
 import lang_lisp from "highlightjs/languages/lisp.min.js";
@@ -29,6 +30,7 @@ const site = lume({
   .use(terser())
   .use(date())
   .use(sitemap())
+  .use(nunjucks())
   .use(codeHighlight({
     languages: {
       javascript: lang_javascript,
