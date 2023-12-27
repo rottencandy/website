@@ -11,7 +11,7 @@ type: page
 
 <header>
     <h1>
-        {{ title | safe }}
+        {{ title }}
         <sup>
             <a class="nohover" href="/rss.xml">
                 <button title="RSS feed">feed</button>
@@ -29,9 +29,9 @@ type: page
             {% for page in search.pages("type=article", "date=desc") %}
             <li>
                 <h3>
-                    <a href="{{ page.data.url | safe }}">{{ page.data.title }}</a>
+                    <a href="{{ page.url }}">{{ page.title }}</a>
                 </h3>
-                <time datetime="{{ page.data.date | date }}">{{ page.data.date | date('do LLL, yyyy') }}</time>
+                <time datetime="{{ page.date | date }}">{{ page.date | date('do LLL, yyyy') }}</time>
             </li>
             {% endfor %}
         <ul>

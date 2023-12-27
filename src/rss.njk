@@ -9,16 +9,16 @@ url: ./rss.xml
         <link>https://saud.wtf</link>
         <description>saud's blog</description>
         <language>en</language>
-        <atom:link href="{{ url | url(true) | safe }}" rel="self" type="application/rss+xml"/>
+        <atom:link href="{{ url | url(true) }}" rel="self" type="application/rss+xml"/>
         <generator>Lume</generator>
         {% for page in search.pages("type=article", "date=desc") %}
         <item>
-            <title>{{ page.data.title | safe }}</title>
-            <link>{{ page.data.url | url(true) | safe }}</link>
-            <guid>{{ page.data.url | url(true) | safe }}</guid>
-            <description>{{ page.data.description | safe }}</description>
+            <title>{{ page.title }}</title>
+            <link>{{ page.url | url(true) }}</link>
+            <guid>{{ page.url | url(true) }}</guid>
+            <description>{{ page.description }}</description>
             <language>en</language>
-            <pubDate>{{ page.data.date }}</pubDate>
+            <pubDate>{{ page.date }}</pubDate>
         </item>
         {% endfor %}
     </channel>
