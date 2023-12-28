@@ -23,9 +23,9 @@ title: Projects
 
     <section>
         <div class="grid">
-            {% for project in projects %}
-            {{ comp.card({ data: project }) | safe }}
-            {% endfor %}
+            {{ for project of projects }}
+            {{ comp.card({ data: project }) |> safe }}
+            {{ /for }}
         </div>
     </section>
 </main>

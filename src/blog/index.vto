@@ -26,14 +26,14 @@ type: page
 <main>
     <section>
         <ul>
-            {% for page in search.pages("type=article", "date=desc") %}
+            {{ for page of search.pages("type=article", "date=desc") }}
             <li>
                 <h3>
                     <a href="{{ page.url }}">{{ page.title }}</a>
                 </h3>
-                <time datetime="{{ page.date | date }}">{{ page.date | date('do LLL, yyyy') }}</time>
+                <time datetime="{{ page.date |> date }}">{{ page.date |> date('do LLL, yyyy') }}</time>
             </li>
-            {% endfor %}
+            {{ /for }}
         <ul>
     </section>
 </main>

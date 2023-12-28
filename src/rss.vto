@@ -9,17 +9,17 @@ url: ./rss.xml
         <link>https://saud.wtf</link>
         <description>saud's blog</description>
         <language>en</language>
-        <atom:link href="{{ url | url(true) }}" rel="self" type="application/rss+xml"/>
+        <atom:link href="{{ url |> url(true) }}" rel="self" type="application/rss+xml"/>
         <generator>Lume</generator>
-        {% for page in search.pages("type=article", "date=desc") %}
+        {{ for page of search.pages("type=article", "date=desc") }}
         <item>
-            <title>{{ page.title }}</title>
-            <link>{{ page.url | url(true) }}</link>
-            <guid>{{ page.url | url(true) }}</guid>
-            <description>{{ page.description }}</description>
-            <language>en</language>
+            <guid>{{ page.url |> url(true) }}</guid>
+            <link>{{ page.url |> url(true) }}</link>
+            <title>{{ page.title |> escape }}</title>
             <pubDate>{{ page.date }}</pubDate>
+            <language>en</language>
+            <description>{{ page.description |> escape }}</description>
         </item>
-        {% endfor %}
+        {{ /for }}
     </channel>
 </rss>
