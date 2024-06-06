@@ -10,7 +10,7 @@
     ]
   },
   "imports": {
-    "lume/": "https://deno.land/x/lume@v2.1.0/",
+    "lume/": "https://deno.land/x/lume@v2.2.1/",
     "highlightjs/": "https://unpkg.com/@highlightjs/cdn-assets@11.9.0/es/"
   }
 }
