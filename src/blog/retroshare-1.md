@@ -12,11 +12,6 @@ But it is severely limited, supports only the basic of interactions with the cli
 This GSoC project will be about creating an entirely new web interface for Retroshare using it’s JSON API to handle all communication between the WebUI and the client.
 
 
-## About Me
-
-My name is Saud, I’m a third-year undergraduate student in Computer Science at Alliance University, Bangalore, India. This is my first time participating as a student in GSoC as well as my first time being involved in the Freifunk community.
-
-
 ## Project breifing
 
 The Web Interface is planned to be made in such a way that all communication with the client happens through the JSON API. As such, It will be made using JavaScript.
