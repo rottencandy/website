@@ -1,6 +1,14 @@
 {
     "projects": [
         {
+            "name": "Xiicur Survivors",
+            "description": "A web-based survival game made for the JS13k game jam.",
+            "image": "/img/xiicur-survivors/game.png",
+            "imageAlt": "Screenshot of the game",
+            "source": "https://github.com/rottencandy/js13k2024",
+            "link": "https://js13kgames.com/2024/games/xiicur-surviivors"
+        },
+        {
             "name": "Vimkubectl",
             "description": "Plugin to manage Kubernetes resources from vim.",
             "image": "/img/projects/vimkubectl.png",
