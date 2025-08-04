@@ -18,7 +18,7 @@ so here they are in case it helps anyone.
 There's a good change that any popular linux distro you install comes with `power-profiles-daemon` installed that allows setting one of the three predefined CPU power profiles (power, balanced, performance).
 And they should even automatically switch based on charging states.
 
-But it's too barebones for my tastes, so I installed [TLP](https://linrunner.de/tlp/index.html) instead, which is a lot more powerful and has more options for fine-grained control. Here's an example config to match power-profiles-daemon's behavior: https://linrunner.de/tlp/faq/ppd.html#how-can-i-use-tlp-to-achieve-the-same-effect-as-power-profiles-daemon
+But it's too barebones for my tastes, so I installed [TLP](https://linrunner.de/tlp/index.html) instead, which is a lot more powerful and has more options for fine-grained control. Here's an example config to match power-profiles-daemon's behavior: [https://linrunner.de/tlp/faq/ppd.html#how-can-i-use-tlp-to-achieve-the-same-effect-as-power-profiles-daemon](https://linrunner.de/tlp/faq/ppd.html#how-can-i-use-tlp-to-achieve-the-same-effect-as-power-profiles-daemon)
 
 Note that TLP and power-profiles-daemon conflict with each other so to use one you have to uninstall the other.
 
