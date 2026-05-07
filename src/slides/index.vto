@@ -1,0 +1,25 @@
+---
+layout: base.vto
+title: Slides
+---
+
+<nav>
+    <a href="/">Home</a>
+</nav>
+
+<header>
+    <h1>
+        {{ title }}
+    </h1>
+</header>
+
+
+<main>
+    <section>
+        <ul>
+            {{ for slide of slides }}
+                <li><a href="{{ slide.link }}" target="_blank">{{ slide.name }}</a></li>
+            {{ /for }}
+        </ul>
+    </section>
+</main>
